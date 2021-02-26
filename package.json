@@ -1,7 +1,7 @@
 {
   "name": "covid19calc",
   "version": "1.0.0",
-  "description": "An Electron boilerplate including TypeScript, React, Jest and ESLint.",
+  "description": "Simulation of COVID-19 with cellular automata and Impact on Mask Wear using React & Electron.",
   "main": "./dist/main.js",
   "scripts": {
     "dev": "npm-run-all -p dev:react electron:serve",
@@ -14,11 +14,11 @@
     "build:electron": "webpack --config webpack/electron.webpack.js",
     "build:react": "webpack --config webpack/react.webpack.js",
     "package": "npm-run-all build package:dist",
-    "package:dist": "electron-builder --dir",
+    "package:dist": "electron-builder --win --linux --dir",
     "test": "jest"
   },
   "keywords": [],
-  "author": "Diego Fernandes <diego.schell.f@gmail.com>",
+  "author": "Maksimilian Blinenkov <mblinenkov@yandex.ru>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
